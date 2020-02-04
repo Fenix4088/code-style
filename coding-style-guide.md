@@ -295,7 +295,7 @@ SCSS
 
 
 ```html
-<!-- Верно. Семантически осмысленный блок `error` -->
+<!-- Верно. Семантически осмысленный блок 'error' -->
 <div class="error"></div>
 <div class="error-message"></div>
 <div class="error-message-block"></div>
@@ -361,7 +361,7 @@ SCSS
 
 ### Модификаторы
 
-Cущность, определяющая внешний вид, состояние или поведение блока либо элемента.
+Сущность, определяющая внешний вид, состояние или поведение блока либо элемента.
 
 ##### ОСОБЕННОСТИ:
 Название модификатора характеризует внешний вид («какой размер?», «какая тема?» и т. п. — «размер»: size-s, «тема»: theme-islands), состояние («чем отличается от прочих?» —
@@ -433,9 +433,4 @@ Code Style Guide для React'a:
 
 ---
 
-## License
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2020 © <a href="https://www.searates.com" target="_blank">SeaRates</a>.
