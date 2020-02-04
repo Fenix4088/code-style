@@ -26,7 +26,8 @@ use Vendor\Food\FoodOrderInterface;
 * Приём заказов с сайта
 * Отправка писем
 */
-class OrderPage extends OrderLogic implements FoodOrderInterface {
+class OrderPage extends OrderLogic implements FoodOrderInterface 
+{
     const TYPE_MAIN = "order-type-main";
     const TYPE_VEGETARIAN = "order-type-vegetarian";
     const TYPE_VEGAN = "order-type-vegan";
@@ -43,7 +44,8 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
     *
     * @return void Обязательно описываем, что функция возвращает void
     */
-    public function go() {
+    public function go()
+    {
         $this->menu = MenuFactory::create($_GET["type"]);
         $this->sampleMethod($this->menu->getName(), $this->menu->getSize());
         $output = $this->longMethodWithManyArgs(
@@ -63,7 +65,8 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
     * @throws Exception If element in array is not an integer
     * @throws MessageException Second exception
     */
-    private function sampleMethod(string $name, int $size = 0) {
+    private function sampleMethod(string $name, int $size = 0)
+    {
         $maxSize = OtherClass::getMaxSize($name);
 
         $arrInline = ['a1', 'b2', 'c3']; // тут в конце нет запятой
@@ -308,11 +311,11 @@ SCSS
 - Допустима любая вложенность блоков.
 
 ```html
-<!-- Блок `header` -->
+<!-- Блок 'header' -->
 <header class="header">
-<!-- Вложенный блок `logo` -->
+<!-- Вложенный блок 'logo' -->
 <div class="logo"></div>
-<!-- Вложенный блок `search-form` -->
+<!-- Вложенный блок 'search-form' -->
 <form class="search-form"></form>
 </header>
 ```
@@ -326,11 +329,11 @@ SCSS
 - Структура полного имени элемента соответствует схеме: имя-блока_имя-элемента. Имя элемента отделяется от имени блока одним подчеркиванием (_).
 
 ```html
-<!-- Блок `search-form` -->
+<!-- Блок 'search-form' -->
 <form class="search-form">
-<!-- Элемент `input` блока `search-form` -->
+<!-- Элемент 'input' блока 'search-form' -->
 <input class="search-form_input">
-<!-- Элемент `button` блока `search-form` -->
+<!-- Элемент 'button' блока 'search-form' -->
 <button class="search-form_button">Найти</button>
 </form>
 ```
@@ -367,11 +370,11 @@ Cущность, определяющая внешний вид, состоян�
 Имя модификатора отделяется от имени блока или элемента одним подчеркиванием (_).
 
 ```html
-<!-- Блок `search-form` -->
+<!-- Блок 'search-form' -->
 <form class="search-form">
-<!-- Элемент `input` блока `search-form` -->
+<!-- Элемент 'input' блока 'search-form' -->
 <input class="search-form_input search-form_input_enabled">
-<!-- Элемент `button` блока `search-form` -->
+<!-- Элемент 'button' блока 'search-form' -->
 <button class="search-form_button_blue">Найти</button>
 </form>
 ```
