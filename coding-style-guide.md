@@ -7,6 +7,7 @@
 - [CSS / SASS / SCSS](#CSS-/-SASS-/-SCSS)
 - [JavaScript](#javascript)
 
+---
 
 ## PHP
 
@@ -16,7 +17,7 @@ namespace FastFood\Page;
 
 use FastFood\Logic\OrderLogic;
 use FastFood\Menu\MenuFactory;
-use Drinks\Whiskey; // Mike`s namespace
+use Drinks\Whiskey; // Mike's namespace
 use Vendor\Food\FoodOrderInterface;
 
 /**
@@ -130,8 +131,6 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 
 ```
 
----
-
 ### Структура
 
 - Добавлять пробел после запятой
@@ -155,8 +154,6 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 - Для всех методов, возвращающих единственный тип данных, мы указывает этот тип данных при определении метода, в том числе и для типа void ( method():string, method():void и т.п. ), в случае возвращения mixed (нескольких типов) значений, эти типы мы описываем в PHP Doc в формате /* @return int|void Comment.
 - Не ставить закрывающий тэг “?>” в конце PHP файлов.
 - Кодировка для всех файлов «UTF-8 без BOM»
-
----
 
 ### Соглашение об именах
 
@@ -235,6 +232,7 @@ class MyClass
 - Не вставляйте блоки PHPDoc в одну строку, даже если они содержат только один тег;
 - Для описания простых функций можно использовать вместо PHP Doc – простой комментарий - //comment.
 
+---
 
 ## CSS / SASS / SCSS
 
@@ -249,43 +247,44 @@ SCSS
 .block { /* Блок */
     font-size: 13px;
     font-style: italic;
-    font-weight:bold;
+    font-weight: bold;
 
     position: absolute;
-    left:10px;
-    top:10px;
-    right:50%;
-    bottom:30px;
+    left: 10px;
+    top: 10px;
+    right: 50%;
+    bottom: 30px;
 
-    border:1px solid red;
+    border: 1px solid red;
     background-color: #fff;
 
     &_wrapper { /* Элемент */
-      padding:10px;
+      padding: 10px;
     }
 
     &_list { /* Элемент */
-        margin-top:10px;
+        margin-top: 10px;
         & > li {
-          margin-left:10px;
+          margin-left: 10px;
         }
     }
 
     &_input-form { /* Элемент */
-        border-radius:10px;
+        border-radius: 10px;
 
         &_blue { /* Модификатор */
           background-color: blue;
         }
     
         &_enabled {
-          display:block;
+          display: block;
         }
     }
 }
 
 ```
 
+---
 
 ## JavaScript
 
@@ -303,7 +302,7 @@ Code Style Guide для React'a:
 - English - https://github.com/airbnb/javascript/tree/master/react
 - Русский - https://github.com/leonidlebedev/javascript-airbnb/tree/master/react
 
-
+---
 
 ## License
 
