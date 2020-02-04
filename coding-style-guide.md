@@ -65,7 +65,7 @@ class OrderPage extends OrderLogic implements FoodOrderInterface
     * @throws Exception If element in array is not an integer
     * @throws MessageException Second exception
     */
-    private function sampleMethod(string $name, int $size = 0)
+    private function sampleMethod(string $name, int $size = 0): void
     {
         $maxSize = OtherClass::getMaxSize($name);
 
@@ -118,7 +118,8 @@ class OrderPage extends OrderLogic implements FoodOrderInterface
         int $secondNumber = 0,
         string $exampleString = null,
         array $options = []
-    ):MenuFactory {
+    ): MenuFactory 
+    {
         $duplicate = MenuFactory::create($this->menu->getType());
 
         // Allow multiline if v.1
