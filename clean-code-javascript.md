@@ -1,4 +1,3 @@
-Перевод книги Райана Макдермота <a href="https://github.com/ryanmcdermott/clean-code-javascript">clean-code-javascript</a>.
 ## Оглавление
   1. [Введение](#Введение)
   2. [Переменные](#Переменные)
